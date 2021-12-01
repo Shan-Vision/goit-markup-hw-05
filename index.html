@@ -42,6 +42,32 @@
             <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                <div class="modal">
+                  <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                  <form action="" class="modal-form">
+                     <div class="modal-box">
+                        <div class="modal-form-box">
+                           <label for="user-name" class="modal-label-name">Имя</label>
+                           <input type="text" name="user-name" id="user-name" class="modal-input-name" required>
+                        </div>
+                        <div class="modal-form-box">
+                           <label for="user-tel" class="modal-label-tel">Телефон</label>
+                           <input type="tel" name="user-tel" id="user-tel" class="modal-input-tel" required>
+                        </div>
+                        <div class="modal-form-box">
+                           <label for="user-mail" class="modal-label-mail">Почта</label>
+                           <input type="mail" name="user-mail" id="user-mail" class="modal-input-mail" required>
+                        </div>
+                        <div class="modal-form-box">
+                           <label for="user-comment" class="modal-label-comment">Комментарий</label>
+                           <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Введите текст" class="modal-area-comment"></textarea>
+                        </div>
+                        <div class="modal-form-checkbox">
+                           <input type="checkbox" name="user-policy" id="user-policy" class="modal-input-policy">
+                           <label for="user-policy" class="modal-policy-text">Соглашаюсь с рассылкой и принимаю <span class="modal-policy-link">Условия договора</span></label>
+                        </div>
+                     </div>
+                  </form>
+                  <button type="submit" class="modal-button-submit">Отправить</button>
                   <button class="close" data-modal-close>
                      <svg class="icon-button">
                         <use href="./images/modal-icon/symbol-defs.svg#icon-close-black"></use>
